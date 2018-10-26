@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spittis/pittis_soraya_pao_allison_hw4.git"
+    "url": "git+https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4.git"
   },
   "keywords": [
     "audio",
@@ -18,9 +18,9 @@
   "author": "Soraya Pittis and Allison Pao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spittis/pittis_soraya_pao_allison_hw4/issues"
+    "url": "https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4/issues"
   },
-  "homepage": "https://github.com/spittis/pittis_soraya_pao_allison_hw4#readme",
+  "homepage": "https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
