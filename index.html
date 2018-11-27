@@ -15,16 +15,79 @@
             <h3>{{ message }}</h3>
 
             <ul>
-                <li v-for="media in entMedia">
-                    <p v-on:click="logMedia">{{ media.name }} by {{ media.creator }}</p>
-                </li>
-            </ul>
-    
-            <a :class="{ 'no-decorate' : anchorOff }" :href="targetURL" target="_blank">{{ targetURL }}</a>
-    
-            <p v-if="hazVue">
-                {{ vuemessage }}
-            </p>
+                    <li v-for="movies in moviesdata">
+                        <button v-on:click="fetchSingle" :data-movie="movies.id" class="more-details">More Details...</button>
+                        <a :href="movies.mov_path" v-on:click="loadMovie">
+                            <img :src="'images/' + movies.med_thumb" alt="movie poster">
+                        </a>
+                        <p>Put genre data here</p>
+                    </li>
+                </ul>
+        
+                <p class="instructions">
+                    <i>Click on a poster to preview the movie!</i>
+                </p>
+        
+                <section class="hidden-movies" :class="{'show-movies' : showDetails }">
+                    <h3 class="movies-title">{{ moviestitle }}</h3>
+                    <video :src="'movies/' + moviessource" autoplay></video>
+                    <div class="movies-details">
+                        <p>{{ moviesdescription }}</p>
+                    </div>
+                </section>
+                <div class="up-arrow">
+                    <span>^</span>
+                </div>
+
+                <ul>
+                        <li v-for="tv in tvdata">
+                                <button v-on:click="fetchSingle" :data-movie="tv.id" class="more-details">More Details...</button>
+                                <a :href="tv.tv_path" v-on:click="loadTV">
+                                    <img :src="'images/' + music.mus_thumb" alt="tv poster">
+                                </a>
+                                <p>Put genre data here</p>
+                            </li>
+                        </ul>
+                
+                        <p class="instructions">
+                            <i>Click on a poster to preview the movie!</i>
+                        </p>
+                
+                        <section class="hidden-tv" :class="{'show-tv' : showDetails }">
+                            <h3 class="tv-title">{{ tvtitle }}</h3>
+                            <video :src="'tv/' + tvsource" autoplay></video>
+                            <div class="tv-details">
+                                <p>{{ tvdescription }}</p>
+                            </div>
+                        </section>
+                        <div class="up-arrow">
+                            <span>^</span>
+                        </div>
+
+                <ul>
+                <li v-for="music in musicdata">
+                        <button v-on:click="fetchSingle" :data-movie="music.id" class="more-details">More Details...</button>
+                        <a :href="music.mus_path" v-on:click="loadMusic">
+                            <img :src="'images/' + music.mus_thumb" alt="music poster">
+                        </a>
+                        <p>Put genre data here</p>
+                    </li>
+                </ul>
+        
+                <p class="instructions">
+                    <i>Click on a poster to preview the movie!</i>
+                </p>
+        
+                <section class="hidden-movies" :class="{'show-music' : showDetails }">
+                    <h3 class="music-title">{{ musictitle }}</h3>
+                    <video :src="'music/' + musicsource" autoplay></video>
+                    <div class="music-details">
+                        <p>{{ musicdescription }}</p>
+                    </div>
+                </section>
+                <div class="up-arrow">
+                    <span>^</span>
+                </div>
 
     </main>
 
