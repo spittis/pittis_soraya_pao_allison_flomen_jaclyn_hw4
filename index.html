@@ -16,9 +16,9 @@
 
             <ul>
                     <li v-for="movies in moviesdata">
-                        <button v-on:click="fetchSingle" :data-movie="movies.id" class="more-details">More Details...</button>
-                        <a :href="movies.mov_path" v-on:click="loadMovie">
-                            <img :src="'images/' + movies.med_thumb" alt="movie poster">
+                        <button v-on:click="fetchSingle" :data-movie="tbl_movies.movies_id" class="more-details">More Details...</button>
+                        <a :href="movies.movies_path" v-on:click="loadMovie">
+                            <img :src="'images/' + tbl_movies.movies_thumb" alt="movie poster">
                         </a>
                         <p>Put genre data here</p>
                     </li>
@@ -41,9 +41,9 @@
 
                 <ul>
                         <li v-for="tv in tvdata">
-                                <button v-on:click="fetchSingle" :data-movie="tv.id" class="more-details">More Details...</button>
-                                <a :href="tv.tv_path" v-on:click="loadTV">
-                                    <img :src="'images/' + music.mus_thumb" alt="tv poster">
+                                <button v-on:click="fetchSingle2" :data-movie="tbl_tv.tv_id" class="more-details">More Details...</button>
+                                <a :href="tbl_tv.tv_path" v-on:click="loadTV">
+                                    <img :src="'images/' + tbl_tv.tv_thumb" alt="tv poster">
                                 </a>
                                 <p>Put genre data here</p>
                             </li>
@@ -65,10 +65,10 @@
                         </div>
 
                 <ul>
-                <li v-for="music in musicdata">
-                        <button v-on:click="fetchSingle" :data-movie="music.id" class="more-details">More Details...</button>
-                        <a :href="music.mus_path" v-on:click="loadMusic">
-                            <img :src="'images/' + music.mus_thumb" alt="music poster">
+                <li v-for="audio in audiodata">
+                        <button v-on:click="fetchSingle3" :data-movie="tbl_audio.audio_id" class="more-details">More Details...</button>
+                        <a :href="tbl_audio.audio_path" v-on:click="loadAudio">
+                            <img :src="'images/' + tbl_audio.audio_thumb" alt="audio poster">
                         </a>
                         <p>Put genre data here</p>
                     </li>
@@ -78,11 +78,11 @@
                     <i>Click on a poster to preview the movie!</i>
                 </p>
         
-                <section class="hidden-movies" :class="{'show-music' : showDetails }">
-                    <h3 class="music-title">{{ musictitle }}</h3>
-                    <video :src="'music/' + musicsource" autoplay></video>
-                    <div class="music-details">
-                        <p>{{ musicdescription }}</p>
+                <section class="hidden-audio" :class="{'show-audio' : showDetails }">
+                    <h3 class="audio-title">{{ audiotitle }}</h3>
+                    <video :src="'audio/' + audiosource" autoplay></video>
+                    <div class="audio-details">
+                        <p>{{ audiodescription }}</p>
                     </div>
                 </section>
                 <div class="up-arrow">

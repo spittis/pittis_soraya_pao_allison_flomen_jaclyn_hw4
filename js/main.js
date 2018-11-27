@@ -32,12 +32,13 @@
             //get all of the movie data ib the oage load
             this.fetchMovieData(null); //this is where we would fetch PHP stuff
         },
-            function() {
+
+        created : function() {
                 //get all of the movie data ib the oage load
                 this.fetchTVData(null); //this is where we would fetch PHP stuff
         },
 
-        function() {
+        created : function() {
             //get all of the movie data ib the oage load
             this.fetchAudioData(null); //this is where we would fetch PHP stuff
     },
@@ -175,6 +176,6 @@
             }
         }
 
-    },
+    })
 
-)()});
+})();

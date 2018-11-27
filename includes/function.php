@@ -2,7 +2,7 @@
     include 'connect.php';
     // get one movie first
     function get_single_movie($pdo, $mov) {
-        $query = "SELECT * FROM movie WHERE id = $mov"; 
+        $query = "SELECT * FROM tbl_movies WHERE movies_id = $mov"; 
         //attach the id in the thumnail to ensure you are getting the right image
 
         $get_movie = $pdo->query($query);
@@ -16,7 +16,7 @@
 
     //get all movies
     function get_all_movies($pdo) {
-        $query = "SELECT * FROM movie";
+        $query = "SELECT * FROM tbl_movies";
         
         $get_movie = $pdo->query($query);
         $results = array();
@@ -31,7 +31,7 @@
 
         //TELEVISION
         function get_single_tv($pdo, $tv) {
-            $query = "SELECT * FROM tv WHERE id = $tv"; 
+            $query = "SELECT * FROM tbl_tv WHERE tv_id = $tv"; 
             //attach the id in the thumnail to ensure you are getting the right image
     
             $get_tv = $pdo->query($query);
@@ -45,7 +45,7 @@
     
         //get all media
         function get_all_tv($pdo) {
-            $query = "SELECT * FROM tv";
+            $query = "SELECT * FROM tbl_tv";
             
             $get_tv = $pdo->query($query);
             $results = array();
@@ -58,8 +58,8 @@
             }
 
              //AUDIO
-        function get_single_audio($pdo, $tv) {
-            $query = "SELECT * FROM audio WHERE id = $audio"; 
+        function get_single_audio($pdo, $aud) {
+            $query = "SELECT * FROM tbl_audio WHERE audio_id = $aud"; 
             //attach the id in the thumnail to ensure you are getting the right image
     
             $get_audio = $pdo->query($query);
@@ -73,7 +73,7 @@
     
         //get all audio
         function get_all_audio($pdo) {
-            $query = "SELECT * FROM audio";
+            $query = "SELECT * FROM tbl_audio";
             
             $get_audio = $pdo->query($query);
             $results = array();
