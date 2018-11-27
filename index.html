@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>AV App</title>
 </head>
 <body>
+
+    <main id="app">
+
+            <h3>{{ message }}</h3>
+
+            <ul>
+                <li v-for="media in entMedia">
+                    <p v-on:click="logMedia">{{ media.name }} by {{ media.creator }}</p>
+                </li>
+            </ul>
     
+            <a :class="{ 'no-decorate' : anchorOff }" :href="targetURL" target="_blank">{{ targetURL }}</a>
+    
+            <p v-if="hazVue">
+                {{ vuemessage }}
+            </p>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
