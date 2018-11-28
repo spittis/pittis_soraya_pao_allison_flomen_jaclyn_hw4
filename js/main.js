@@ -4,7 +4,7 @@
         el : "#app",
 
         data : {
-            message : "Welcome to out AV app!",
+            message : "Welcome to our AV app!",
 
             moviedata : [],
             tvdata : [],
@@ -13,16 +13,16 @@
             singledata2 : [],
             singledata3 : [],
 
-            movietitle : "Ready Player One",
-            moviedescription : "Steven Spielberg",
+            movietitle : "",
+            moviedescription : "",
             moviesource : "",
 
-            tvtitle : "Game of Thrones",
-            tvdescription : "by George Martin",
+            tvtitle : "",
+            tvdescription : "",
             tvsource : "",
 
-            audiotitle : "Thank You, Next",
-            audiodescription : "Ariana Grande",
+            audiotitle : "",
+            audiodescription : "",
             audiosource : "",
 
             showDetails : false 
@@ -81,7 +81,7 @@
             },
 
             fetchMovieData(movie) {
-               let url = movie ?`./includes/index.php?movie=${movie}` : './includes/index.php'; 
+               let url = movie ?`./includes/index.php?movies_name=${movie}` : './includes/index.php'; 
                 //this is a ternary statement, shorthand if else statement. left of : is true, right is false
             
                 fetch(url)
@@ -115,7 +115,7 @@
                     },
 
                      fetchTVData(tv) {
-                        let url = tv ?`./includes/index.php?tv=${tv}` : './includes/index.php'; 
+                        let url = tv ?`./includes/index.php?tv_name=${tv}` : './includes/index.php'; 
                          //this is a ternary statement, shorthand if else statement. left of : is true, right is false
                      
                          fetch(url)
@@ -150,7 +150,7 @@
                      
 
                      fetchAudioData(audio) {
-                        let url = audio ?`./includes/index.php?audio=${audio}` : './includes/index.php'; 
+                        let url = audio ?`./includes/index.php?audio_name=${audio}` : './includes/index.php'; 
                          //this is a ternary statement, shorthand if else statement. left of : is true, right is false
                      
                          fetch(url)
