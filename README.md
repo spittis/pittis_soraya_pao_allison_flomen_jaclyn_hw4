@@ -18,6 +18,7 @@ Users can begin by downloading a zip file of this project and opening the index.
 
 * **Soraya Pittis** - [spittis](https://github.com/spittis)
 * **Allison Pao** - [apao4](https://github.com/apao4)
+* **Jaclyn Flomen** - [jaclynflomen](https://github.com/jaclynflomen)
 
 
 ## License
