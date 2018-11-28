@@ -15,7 +15,7 @@
             <h3>{{ message }}</h3>
 
             <ul>
-                    <li v-for="movies in moviesdata">
+                    <li v-for="movies in moviedata">
                         <button v-on:click="fetchSingle" :data-movie="tbl_movies.movies_id" class="more-details">More Details...</button>
                         <a :href="movies.movies_path" v-on:click="loadMovie">
                             <img :src="'images/' + tbl_movies.movies_thumb" alt="movie poster">
@@ -29,10 +29,10 @@
                 </p>
         
                 <section class="hidden-movies" :class="{'show-movies' : showDetails }">
-                    <h3 class="movies-title">{{ moviestitle }}</h3>
-                    <video :src="'movies/' + moviessource" autoplay></video>
+                    <h3 class="movies-title">{{ movietitle }}</h3>
+                    <video :src="'movies/' + moviesource" autoplay></video>
                     <div class="movies-details">
-                        <p>{{ moviesdescription }}</p>
+                        <p>{{ moviedescription }}</p>
                     </div>
                 </section>
                 <div class="up-arrow">

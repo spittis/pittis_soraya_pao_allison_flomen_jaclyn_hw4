@@ -13,16 +13,16 @@
             singledata2 : [],
             singledata3 : [],
 
-            movietitle : "",
-            moviedescription : "",
+            movietitle : "Ready Player One",
+            moviedescription : "Steven Spielberg",
             moviesource : "",
 
-            tvtitle : "",
-            tvdescription : "",
+            tvtitle : "Game of Thrones",
+            tvdescription : "by George Martin",
             tvsource : "",
 
-            audiotitle : "",
-            audiodescription : "",
+            audiotitle : "Thank You, Next",
+            audiodescription : "Ariana Grande",
             audiosource : "",
 
             showDetails : false 
