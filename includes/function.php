@@ -31,7 +31,7 @@
 
         //TELEVISION
         function get_single_tv($pdo, $tv) {
-            $query = "SELECT * FROM tbl_tv WHERE tv_id = $tv"; 
+            $query = "SELECT * FROM tbl_tv WHERE tv_name = $tv"; 
             //attach the id in the thumnail to ensure you are getting the right image
     
             $get_tv = $pdo->query($query);
@@ -59,7 +59,7 @@
 
              //AUDIO
         function get_single_audio($pdo, $aud) {
-            $query = "SELECT * FROM tbl_audio WHERE audio_id = $aud"; 
+            $query = "SELECT * FROM tbl_audio WHERE audio_name = $aud"; 
             //attach the id in the thumnail to ensure you are getting the right image
     
             $get_audio = $pdo->query($query);
