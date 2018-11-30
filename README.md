@@ -1,4 +1,4 @@
-# Audio/Video Application
+# Audio/Video Application: Flashback
 
 This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles. 
 
@@ -28,6 +28,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* We were inspired by this site: [Lucid Works](https://lucidworks.com/darkdata/)
-* We took inspiration from the photographs on this site: [Creative Market](https://creativemarket.com/VectorPot/1983404-Space-Universe-Icon-Set)
+* We were inspired by this site: [Netflix](https://netflix.com)
+* We took inspiration from the 1980s graphic design work on this portfolio site: [Chris Nielson](https://chriskirknielsen.com)
 

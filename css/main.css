@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "inception";
+  src: url("../fonts/inception.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "classybeautiful";
+  src: url("../fonts/classybeautiful.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+hide {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
