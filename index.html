@@ -39,55 +39,6 @@
                     <span>^</span>
                 </div>
 
-                <ul>
-                        <li v-for="tv in tvdata">
-                                <button v-on:click="fetchSingle2" :data-movie="tbl_tv.tv_id" class="more-details">More Details...</button>
-                                <a :href="tbl_tv.tv_path" v-on:click="loadTV">
-                                    <img :src="'images/' + tbl_tv.tv_thumb" alt="tv poster">
-                                </a>
-                                <p>Put genre data here</p>
-                            </li>
-                        </ul>
-                
-                        <p class="instructions">
-                            <i>Click on a poster to preview the movie!</i>
-                        </p>
-                
-                        <section class="hidden-tv" :class="{'show-tv' : showDetails }">
-                            <h3 class="tv-title">{{ tvtitle }}</h3>
-                            <video :src="'tv/' + tvsource" autoplay></video>
-                            <div class="tv-details">
-                                <p>{{ tvdescription }}</p>
-                            </div>
-                        </section>
-                        <div class="up-arrow">
-                            <span>^</span>
-                        </div>
-
-                <ul>
-                <li v-for="audio in audiodata">
-                        <button v-on:click="fetchSingle3" :data-movie="tbl_audio.audio_id" class="more-details">More Details...</button>
-                        <a :href="tbl_audio.audio_path" v-on:click="loadAudio">
-                            <img :src="'images/' + tbl_audio.audio_thumb" alt="audio poster">
-                        </a>
-                        <p>Put genre data here</p>
-                    </li>
-                </ul>
-        
-                <p class="instructions">
-                    <i>Click on a poster to preview the movie!</i>
-                </p>
-        
-                <section class="hidden-audio" :class="{'show-audio' : showDetails }">
-                    <h3 class="audio-title">{{ audiotitle }}</h3>
-                    <video :src="'audio/' + audiosource" autoplay></video>
-                    <div class="audio-details">
-                        <p>{{ audiodescription }}</p>
-                    </div>
-                </section>
-                <div class="up-arrow">
-                    <span>^</span>
-                </div>
 
     </main>
 
