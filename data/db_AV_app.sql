@@ -40,7 +40,7 @@ CREATE TABLE `tbl_audio` (
 --
 
 INSERT INTO `tbl_audio` (`audio_id`, `audio_name`, `audio_desc`, `audio_genre`, `audio_path`, `audio_thumb`) VALUES
-(1, 'thank u, next', 'Ariana Grande - Single\r\nReleased in November 2018\r\nRepublic Records', 'Pop', 'thankunext.mp3', 'thankunext.jpg'),
+(1, 'thank u, next', 'Ariana Grande - Single\r\nReleased in November 2018\r\nRepublic Records', 'Pop', 'thankunext.mp3', 'thankunext.png'),
 (2, 'Happier', 'Marshmello & Bastille\r\nSingle\r\nReleased August 2018\r\nJoytime Collective', 'Dance', 'happier.mp3', 'happier.jpg'),
 (3, 'Eastside', 'benny blanco, Halsey & Khalid\r\nSingle\r\nReleased July 2018\r\nInterscope Records', 'Pop', 'eastside.mp3', 'eastside.jpg'),
 (4, 'I Love It', 'Kanye West & Lil Pump\r\nSingle\r\nReleased September 2018\r\nLLC & Warner Brothers Records', 'Hip Hop, Rap', 'ILoveIt.mp3', 'ILoveIt.jpg'),
