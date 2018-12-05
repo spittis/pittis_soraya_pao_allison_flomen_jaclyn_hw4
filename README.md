@@ -1,6 +1,6 @@
 # Audio/Video Application: Flashback
 
-This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles. Adults can filter what their kids can and can't watch. And children can easily navigate the app with the use of easy to use icons and big, bold imagery/text. 
+This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles through Roku. Adults can filter what their kids can and can't watch. And children can easily navigate the app with the use of easy to use icons and big, bold imagery/text. 
 
 
 ## Getting Started
@@ -17,8 +17,8 @@ From the command line:
 ```
 $ git init
 Clone this repository
-$ git clone https://github.com/spittis/pittis_soraya_portfolio.git
-$ cd pittis_soraya_portfolio
+$ git clone https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4.git
+$ cd pittis_soraya_pao_allison_flomen_jaclyn_hw4
 Open the index.html in a browser, Chrome and Safari work best
 ```
 
