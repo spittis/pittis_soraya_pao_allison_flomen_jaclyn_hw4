@@ -1,6 +1,6 @@
 # Audio/Video Application: Flashback
 
-This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles. 
+This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles. Adults can filter what their kids can and can't watch. And children can easily navigate the app with the use of easy to use icons and big, bold imagery/text. 
 
 
 ## Getting Started
@@ -8,10 +8,23 @@ This is an audio/video app that enables users to log in, filter, and select movi
 Users can begin by downloading a zip file of this project and opening the index.html in a browser of their choosing. 
 
 
+## Required Before Installation
+Users will need Git installed on their local computers. For detailed installation instructions, [click here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Installing
+From the command line:
+
+```
+$ git init
+Clone this repository
+$ git clone https://github.com/spittis/pittis_soraya_portfolio.git
+$ cd pittis_soraya_portfolio
+Open the index.html in a browser, Chrome and Safari work best
+```
+
 ## Built With
 
 * [Animate.css](https://daneden.github.io/animate.css/) - The library of CSS animations
-* [wow.js](https://wowjs.uk) - The tool that reveals CSS animation as you scroll
 
 
 ## Authors
