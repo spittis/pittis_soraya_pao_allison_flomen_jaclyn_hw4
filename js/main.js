@@ -37,19 +37,19 @@
                 e.preventDefault(); //block a page reload (anchor tag default behaviour)
                 
                 dataKey = e.currentTarget.getAttribute('href');
-                currentData = this.moviedata.filter(movie => movie.mov_path === dataKey);
+                currentData = this.moviedata.filter(tbl_movies => tbl_movies.movies_thumb === dataKey);
 
-                this.movietitle = currentData[0].mov_name;
-                this.moviedescription = currentData[0].movie_desc;
+                this.movietitle = currentData[0].movies_name;
+                this.moviedescription = currentData[0].movies_desc;
                 this.moviesource = dataKey;
 
                 this.showDetails = true;
 
-                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
+                // setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
             },
 
             fetchMovieData(movie) {
-               let url = movie ?`./includes/index.php?movies_name=${movie}` : './includes/index.php'; 
+               let url = movie ?`./includes/index.php?movie=${movie}` : './includes/index.php'; 
                 //this is a ternary statement, shorthand if else statement. left of : is true, right is false
             
                 fetch(url)
@@ -59,7 +59,7 @@
 
                     if (movie) {
                         //store data in the single result above
-                        this.singledata = data;
+                        this.moviedata = data;
                     } else {
                         //initial data grab, store in the videodata array
                         this.moviedata = data;
