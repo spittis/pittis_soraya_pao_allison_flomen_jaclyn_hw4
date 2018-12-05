@@ -1,7 +1,6 @@
 <?php
-    include 'functions.php';
+    include 'function.php';
     
-    //single movie route
     if (isset($_GET["movie"])){
         $data = get_all_movies($conn, $_GET["movie"]);
         echo json_encode($data);
