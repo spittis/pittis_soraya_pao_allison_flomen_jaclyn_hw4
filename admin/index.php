@@ -21,9 +21,6 @@
 			<li><a href="scripts/caller.php?caller_id=logout">Sign Out</a></li>
 		</ul>
 
-		<ul>
-			<li><a href="admin_addmovie.php">Add Movie</a></li>
-		</ul>
 	</nav>
 </body>
 </html>
