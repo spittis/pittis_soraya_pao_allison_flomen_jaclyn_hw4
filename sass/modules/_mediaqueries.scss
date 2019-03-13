@@ -1,0 +1,254 @@
+
+//MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE 
+
+@media (max-width: 479px) {
+
+#logo
+{
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#menuToggle //three span lines
+{
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+  right: 5%;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: $pink;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(47deg) translate(2px, -1px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-47deg) translate(0, -1px);
+}
+	
+#menu
+{
+  position: fixed;
+  margin: -100px 0 0 -180px;
+  width: 200px;
+  padding-top: 75px;
+  padding-bottom: 25px;
+  background: $blue;
+  list-style-type: none;
+  //-webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(120%, 0);
+  transition: transform 0.7s;
+  text-decoration: none;
+}
+
+#menu li
+{
+  padding: 15px 15px 10px 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: white;
+}
+
+#menu a
+{
+  text-decoration: none;
+}
+
+#menu li a
+{
+  text-decoration: none;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+}
+
+
+
+
+
+
+
+
+// TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET
+
+@media (min-width: 480px) and (max-width: 1024px) {
+
+#logo
+{
+    width: 35%;
+    margin-top: 2%;
+    margin-left: 4%;
+    float: left;
+    z-index: 1;
+}
+
+#menutoggle
+{
+   display: none;
+}
+    
+#move 
+{
+    clear: both;
+    margin-top: 10%;
+}
+	
+#checkbox
+{
+    display: none;
+}
+
+#menu li
+{
+padding: 5px 10px 0px 10px;
+display: block;
+color: $blue;
+font-weight: lighter;
+text-align: center;
+float: left;
+font-size: 80%;
+font-weight: bold;
+font-size: 1em;
+border-bottom: 5px solid black;
+}
+
+
+#menu
+{
+list-style-type: none;
+z-index: 1;
+text-align: center;
+float: right;
+padding-right: 8%;
+padding-top: 5%;
+}
+
+#menu li:hover
+{
+    border-bottom: 5px solid $pink;
+}
+   
+}
+
+
+
+
+
+
+// DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP
+
+
+@media (min-width: 1024px) {
+
+/*NAVIGATION*/
+
+#menutoggle
+{
+    display: none;
+}
+
+#logo
+{
+    width: 10%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    float: left;
+    z-index: 1;
+}
+
+#move 
+{
+    clear: both;
+    margin-top: 10%;
+}
+
+#checkbox
+{
+display:none;
+}
+
+#menu li
+{
+padding: 5px 5px 0px 5px;
+display: block;
+color: $blue;
+text-align: center;
+float: left;
+font-weight: bold;
+border-bottom: 5px solid black;
+}
+
+#menu
+{
+list-style-type: none;
+z-index: 1;
+text-align: center;
+float: right;
+padding-right: 4%;
+padding-top: 3%;
+padding-bottom: 1%;
+}
+
+#menu li
+{
+padding: 10px;
+display: block;
+color: $blue;
+text-align: center;
+float: left;
+font-weight: bold;
+font-size: 1.1em;
+margin-right: 1em;
+}
+
+#menu li:hover
+{
+border-bottom: 5px solid $pink;
+}
+
+}
+
