@@ -10,7 +10,6 @@
 		$password = trim($_POST['password']);
 		$email = trim($_POST['email']);
 
-
 		//Validation?
 		if(empty($username) || empty($password) || empty($email)){
 			$message = 'Please fill the required fields';
@@ -44,6 +43,14 @@
 
 		<label for="password">Password:</label>
 		<input type="text" id="password" name="password" value=""><br><br>
+
+		<label for="status" >Status:</label>
+        <select name="status" id="status" required>
+			<option>Please select a status</option>
+			<option>Admin</option>
+			<option>Adult(13+)</option>
+			<option>Child (0-12)</option>
+		</select><br><br>
 
 		<button type="submit" name="submit">Create User</button>
 	</form>

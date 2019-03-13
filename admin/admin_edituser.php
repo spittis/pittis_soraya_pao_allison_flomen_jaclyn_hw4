@@ -64,16 +64,16 @@ if(isset($_POST['submit'])){
 
     <form method="POST" action="admin_edituser.php">
     <label for="first-name">First Name:</label>
-		<input type="text" id="first-name" name="fname" value="<?php echo $found_user['user_fname']; ?>"><br><br>
+		<input type="text" id="first-name" name="fname" value="<?php echo $found_user['first_name']; ?>"><br><br>
 
 		<label for="username">User Name:</label>
 		<input type="text" id="username" name="username" value="<?php echo $found_user['user_name']; ?>"><br><br>
 
 		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" value="<?php echo $found_user['user_email']; ?>"><br><br>
+		<input type="email" id="email" name="email" value="<?php echo $found_user['email']; ?>"><br><br>
 
 		<label for="password">Password:</label>
-		<input type="text" id="password" name="password" value="<?php echo $found_user['user_pass']; ?>"><br><br>
+		<input type="text" id="password" name="password" value="<?php echo $found_user['password']; ?>"><br><br>
 
 		<button type="submit" name="submit">Edit User</button> 
         
