@@ -69,53 +69,42 @@ export default {
 
     data() {
         return {
-            input : {
-                username: "",
-                password: ""
-            }
+            activeMediaType: "movies",
+        
+            currentMediaDetails: {},
+
+            mediaTypes: [
+                { iconClass: "fas fa-headphones", description: "audio" },
+                { iconClass: "fas fa-film", description: "movies" },
+                { iconClass: "fas fa-tv", description: "tv" }
+            ],
+
+            retrievedMedia: []
         }
     },
 
+    created: function(){
+        this.loadMedia(null, "movies");
+    },
+
     methods: {
-        login(){
-            console.log("trying to log in");
-
-            //check against our mock account creds
-            if(this.input.username !="" && this.input.password !="") { //if its not empty
-
-                // create some form data to do a POST request
-                let formData = new FormData(); //serializing everything in the input field (password, etc.)
-
-                formData.append("username", this.input.username);
-                formData.append("password", this.input.password); 
-
-
-                //do a fetch here and check creds on the back end
-                let url = `./admin/admin_login.php`; //pan's file
-
-                fetch(url, {
-                    method: 'POST',
-                    body: formData
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        if (typeof data !== "object") {
-                            //if te php file returns a failure, try again
-                            console.log("authentication failed, try again");
-                            //pop a toast message / notification here
-                            return;
-                        }else{
-                            //if the back-end authentication works, then go to the users page
-                            this.$emit("authenticated", true);
-                            this.$router.replace({name: "users"});
-                        }
-                    })
-                .catch(function(error){
-                    console.error(error);
-                });
-            } else {
-                console.log('Username and Password cannot be blank');
+        loadMedia(filter, mediaType) {
+            if(this.activeMediaType !== mediaType && mediaType !== null) {
+                this.activeMediaType = mediaType
             }
+
+            let url = (filter == null) ?`./admin/index.php?media=${this.activeMediaType}` : `./admin/index.php?media=${this.mediaType}&&filter=${filter}`;
+
+
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                //get all the media (audio, film, tv)
+                this.retrieveMedia = data;
+
+                //make the first result the one we're viewing/listening to on the page
+                this.currentMediaDetails = data[0];
+            })
         }
     }
 }
