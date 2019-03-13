@@ -16,7 +16,7 @@ export default {
             mediaTypes: [
                 { iconClass: "fas fa-headphones", description: "audio" },
                 { iconClass: "fas fa-film", description: "movies" },
-                { iconClass: "fas fa-tv", description: "television" }
+                { iconClass: "fas fa-tv", description: "tv" }
             ],
 
             retrievedMedia: []
