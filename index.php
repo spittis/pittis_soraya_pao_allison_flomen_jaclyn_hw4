@@ -1,4 +1,17 @@
 <?php require_once('admin/scripts/config.php');
+
+if(isset($_GET['media'])){
+	$type = $_GET['media']; //this will alwyas be audio, video, or tv
+
+	if($type == "video") {
+		$tbl = "tbl_movies";
+	}else if($type == "audio"){
+		$tbl = "tbl_audio";
+	}else if ($type == "tv"){
+		$tbl = "tbl_tv";
+	}
+}
+
 if(isset($_GET['filter'])){
 	$tbl = 'tbl_movies';
 	$tbl_2 = 'tbl_genre';
@@ -8,6 +21,7 @@ if(isset($_GET['filter'])){
 	$col_3 = 'genre_name';
 	$filter = $_GET['filter'];
 	$results = filterResults($tbl,$tbl_2,$tbl_3,$col,$col_2,$col_3,$filter);
+	echo json_encode($results);
 }else{
 	$results = getAll('tbl_movies');
 }
