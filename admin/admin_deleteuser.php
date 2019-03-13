@@ -39,9 +39,9 @@
         <tbody>
         <?php while($user = $users->fetch(PDO::FETCH_ASSOC)):?>
             <tr>
-                <td><?php echo $user['first_name'];?></td>
+                <td><?php echo $user['user_fname'];?></td>
                 <td><?php echo $user['user_name'];?></td>
-                <td><?php echo $user['email'];?></td>
+                <td><?php echo $user['user_email'];?></td>
                 <td><a href="./scripts/caller.php?caller_id=delete&id=<?php echo $user['user_id'];?>">Delete</a></td>
             </tr>
             <?php endwhile; ?>

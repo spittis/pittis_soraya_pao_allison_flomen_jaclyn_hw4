@@ -1,6 +1,6 @@
 <?php 
 	require_once('scripts/config.php');
-	// confirm_logged_in();
+	confirm_logged_in();
 
 	if(isset($_POST['submit'])){
 		//Do some preprocess for the data
@@ -44,13 +44,13 @@
 		<label for="password">Password:</label>
 		<input type="text" id="password" name="password" value=""><br><br>
 
-		<label for="status" >Status:</label>
+		<!-- <label for="status" >Status:</label>
         <select name="status" id="status" required>
 			<option>Please select a status</option>
 			<option>Admin</option>
 			<option>Adult(13+)</option>
 			<option>Child (0-12)</option>
-		</select><br><br>
+		</select><br><br> -->
 
 		<button type="submit" name="submit">Create User</button>
 	</form>
