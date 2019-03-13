@@ -1,7 +1,8 @@
-# Audio/Video Application: Flashback
-![logo](https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4/blob/master/images/logo.svg)
+# Roku Flashback Audio and Video Player
 
-This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles through Roku. Adults can filter what their kids can and can't watch. And children can easily navigate the app with the use of easy to use icons and big, bold imagery/text. 
+![logo](https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4/blob/master/images/av-logo.svg)
+
+This is an audio/video app that enables users to log in, filter, and select movies/tv shows/audio based on user profiles through Roku. Adults can now filter what their kids can and can't watch. Plus, children can easily navigate the app with the use of easy to use icons and big, bold imagery/text. 
 
 
 ## Getting Started
