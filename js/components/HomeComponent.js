@@ -1,8 +1,25 @@
 export default {
     template: `
-<div>
+    <div>
+        
+<body>
+<img id="bkgrd-mobile" src="images/mountains-stars-mobile.jpg">
+<img id="bkgrd-tablet" src="images/mountains-stars-mobile.jpg">
+<img id="bkgrd-desktop" src="images/mountains-stars.jpg">
+<img id="home-logo" src="images/av-logo.svg">
 
+
+<div id="login-buttons">
+<a href="admin/admin_createuser.php">Sign Up</a>
+<a href="admin/admin_login.php">Sign In</a>
 </div>
+
+
+<div id="roku-logo">
+    <a href="https://www.roku.com/en-ca/"><img id="roku-logo" src="images/roku-logo.png"></a>
+</div>     
+</body> 
+    </div>
     `,
 
     data() {

@@ -1,12 +1,14 @@
 
 //components here
-import LoginComponent from './components/LoginComponent.js'; //this is like doing a php include
+import HomeComponent from './components/HomeComponent.js';
 import UserComponent from './components/UserComponent.js';
+// import UserHomeComponent from './components/UserHomeComponent.js';
 
 const routes = [
-    { path: '/', redirect: {name: 'login'}},
-    { path: '/login', name: 'login', component: LoginComponent },
-    { path: '/user', name: 'home', component: UserComponent, props: true}
+    { path: '/', redirect: {name: 'home'}},
+    { path: '/home', name: 'home', component: HomeComponent },
+    { path: '/user', name: 'user', component: UserComponent },
+    // { path: '/userhome', name: 'login', component: UserHomeComponent, props: true}
     
 ];
 
@@ -49,7 +51,7 @@ const vm = new Vue ({
         },
 
         logout(){
-            this.$router.push({ path: "/login"} ); //the order here matters //login path has to fire first
+            this.$router.push({ path: "/home"} ); //the order here matters //login path has to fire first
             this.authenticated = false; //and then turn off the authentication
         },
 
@@ -67,7 +69,7 @@ router.beforeEach((to, from, next) => {
     console.log("router guard fired!");
 
     if (vm.authenticated == false) {
-        next("/login");
+        next("/home");
     }else{
         next();
     }
