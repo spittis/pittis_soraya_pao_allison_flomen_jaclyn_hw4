@@ -8,6 +8,130 @@
   src: url("../fonts/classybeautiful.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@media only screen and (max-width: 479px) {
+  #bkgrd-mobile {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0px; }
+
+  #bkgrd-tablet {
+    display: none; }
+
+  #bkgrd-desktop {
+    display: none; }
+
+  #home-logo {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 7%;
+    margin-top: 20%;
+    position: relative; }
+
+  #login-buttons {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    border-color: #00EEFF;
+    border: 5px; }
+
+  #login-buttons a {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    background: #ffffff;
+    padding: 7px 40px 7px 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #00EEFF;
+    border-width: 2px;
+    margin: 10px;
+    color: #000; }
+
+  #roku-logo {
+    margin: 0 auto;
+    width: 70px;
+    height: auto;
+    margin-top: 100px;
+    border: none; } }
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  #bkgrd-mobile {
+    display: none; }
+
+  #bkgrd-tablet {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0px; }
+
+  #bkgrd-desktop {
+    display: none; }
+
+  #home-logo {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-top: 30%; }
+
+  #login-buttons {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    margin-top: 10%; }
+
+  #login-buttons a {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    background: #ffffff;
+    padding: 7px 50px 7px 50px;
+    border-radius: 10px;
+    border-color: #00EEFF;
+    border-width: 2px;
+    border: 5px;
+    margin: 30px;
+    color: #000; }
+
+  #roku-logo {
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+    margin-top: 45%;
+    border: none; } }
+@media only screen and (min-width: 1024px) {
+  #bkgrd-mobile {
+    display: none; }
+
+  #bkgrd-tablet {
+    display: none; }
+
+  #bkgrd-desktop {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0px; }
+
+  #home-logo {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 33%;
+    margin-top: 10%; }
+
+  #login-buttons {
+    display: none; }
+
+  #roku-logo {
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+    margin-top: 125px;
+    border: none; } }
 hide {
   display: none; }
 
