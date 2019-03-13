@@ -1,6 +1,10 @@
 <?php 
 	require_once('scripts/config.php');
+<<<<<<< HEAD
 	// confirm_logged_in();
+=======
+	confirm_logged_in();
+>>>>>>> 166ad384b63a8b4d81793ea5f11b2b7ce4b0c6f3
 
 	if(isset($_POST['submit'])){
 		//Do some preprocess for the data
@@ -10,7 +14,10 @@
 		$password = trim($_POST['password']);
 		$email = trim($_POST['email']);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 166ad384b63a8b4d81793ea5f11b2b7ce4b0c6f3
 		//Validation?
 		if(empty($username) || empty($password) || empty($email)){
 			$message = 'Please fill the required fields';
@@ -45,6 +52,17 @@
 		<label for="password">Password:</label>
 		<input type="text" id="password" name="password" value=""><br><br>
 
+<<<<<<< HEAD
+=======
+		<!-- <label for="status" >Status:</label>
+        <select name="status" id="status" required>
+			<option>Please select a status</option>
+			<option>Admin</option>
+			<option>Adult(13+)</option>
+			<option>Child (0-12)</option>
+		</select><br><br> -->
+
+>>>>>>> 166ad384b63a8b4d81793ea5f11b2b7ce4b0c6f3
 		<button type="submit" name="submit">Create User</button>
 	</form>
 
