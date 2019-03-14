@@ -6,49 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/master.css">
 
   
-    <title>AV App</title>
+    <title>Roku Flashback</title>
 </head>
 <body>
 
     <main id="app">
 
-            <h3>{{ message }}</h3>
+        <router-link :to="{ path: '/usershome'}"><li>Home</li></router-link>
+        <router-link :to="{ path: '/login'}"><li>Sign In</li></router-link>
 
-            <ul>
-                    <li v-for="item in moviedata">
-                        <button v-on:click="fetchSingle" :data-movie="item.movies_id" class="more-details">More Details...</button>
-                        <a :href="item.movies_thumb" v-on:click="loadMovie">
-                            <img :src="'images/' + item.movies_thumb" alt="movie poster">
-                        </a>
-                        <p>Put genre data here</p>
-                    </li>
-                </ul>
-        
-                <p class="instructions">
-                    <i>Click on a poster to preview the movie!</i>
-                </p>
-        
-                <section class="hidden-movies" :class="{'show-movies' : showDetails }">
-                    <h3 class="movies-title">{{ movietitle }}</h3>
-                    <video :src="'images/' + moviesource" autoplay></video>
-                    <div class="movies-details">
-                        <p>{{ moviedescription }}</p>
-                    </div>
-                </section>
-                <div class="up-arrow">
-                    <span>^</span>
-                </div>
 
 
     </main>
 
 
-    <script src="js/main.js"></script>
+    <script type="module" src="js/master.js"></script>
 </body>
 </html>

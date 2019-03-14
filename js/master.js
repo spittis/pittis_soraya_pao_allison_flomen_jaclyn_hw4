@@ -1,12 +1,14 @@
 
 //components here
 import LoginComponent from './components/LoginComponent.js'; //this is like doing a php include
-import UserComponent from './components/UserComponent.js';
+import UserHomeComponent from './components/UserHomeComponent.js';
+import UserComponent from './components/UserComponents.js';
 
 const routes = [
     { path: '/', redirect: {name: 'login'}},
     { path: '/login', name: 'login', component: LoginComponent },
-    { path: '/user', name: 'home', component: UserComponent, props: true}
+    { path: '/users', name: 'users', component: UserComponent },
+    { path: '/usershome', name: 'home', component: UserHomeComponent, props: true}
     
 ];
 

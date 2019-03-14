@@ -19,9 +19,15 @@ export default {
                 { iconClass: "fas fa-tv", description: "tv" }
             ],
 
-            retrievedMedia: []
+            retrievedMedia: [],
+
+            filters: [
+                { name: "Action", click: "Action" }
+            ]
         }
     },
+
+    
 
     created: function(){
         this.loadMedia(null, "movies");
@@ -33,7 +39,7 @@ export default {
                 this.activeMediaType = mediaType
             }
 
-            let url = (filter == null) ?`./admin/index.php?media=${this.activeMediaType}` : `./admin/index.php?media=${this.mediaType}&&filter=${filter}`;
+            let url = (filter == null) ?`./admin/index.php?media=${this.activeMediaType}` : `./admin/index.php?media=${mediaType}&&filter=${filter}`;
 
 
         fetch(url)
