@@ -1,14 +1,14 @@
 
 //components here
-import HomeComponent from './components/HomeComponent.js';
-import UserComponent from './components/UserComponent.js';
-// import UserHomeComponent from './components/UserHomeComponent.js';
+import LoginComponent from './components/LoginComponent.js'; //this is like doing a php include
+import UserHomeComponent from './components/UserHomeComponent.js';
+import UserComponent from './components/UserComponents.js';
 
 const routes = [
-    { path: '/', redirect: {name: 'home'}},
-    { path: '/home', name: 'home', component: HomeComponent },
-    { path: '/user', name: 'user', component: UserComponent },
-    // { path: '/userhome', name: 'login', component: UserHomeComponent, props: true}
+    { path: '/', redirect: {name: 'login'}},
+    { path: '/login', name: 'login', component: LoginComponent },
+    { path: '/users', name: 'users', component: UserComponent },
+    { path: '/usershome', name: 'home', component: UserHomeComponent, props: true}
     
 ];
 
