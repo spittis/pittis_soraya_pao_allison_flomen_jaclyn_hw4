@@ -51,7 +51,7 @@ const vm = new Vue ({
         },
 
         logout(){
-            this.$router.push({ path: "/login"} ); //the order here matters //login path has to fire first
+            this.$router.push({ path: "/home"} ); //the order here matters //login path has to fire first
             this.authenticated = false; //and then turn off the authentication
         },
 
@@ -69,7 +69,7 @@ router.beforeEach((to, from, next) => {
     console.log("router guard fired!");
 
     if (vm.authenticated == false) {
-        next("/login");
+        next("/home");
     }else{
         next();
     }

@@ -9,25 +9,51 @@
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/master.css">
-
+  <link rel="stylesheet" href="css/main.css">
   
     <title>Roku Flashback</title>
 </head>
 <body>
-
     <main id="app">
 
-        <router-link :to="{ path: '/usershome'}"><li>Home</li></router-link>
-        <router-link :to="{ path: '/login'}"><li>Sign In</li></router-link>
+        <img id="bkgrd-mobile" src="images/mountains-stars-mobile.jpg">
+        <img id="bkgrd-tablet" src="images/mountains-stars-mobile.jpg">
+        <img id="bkgrd-desktop" src="images/mountains-stars.jpg">
+        <router-link :to="{ path: '/users'}"><img id="home-logo" src="images/av-logo.svg"></router-link> 
+    
+    
+    <div id="login-buttons">
+        <a href="admin/admin_createuser.php">Sign Up</a>
+        <a href="admin/admin_login.php">Sign In</a>
+    </div>
+    
+    
+    <div id="roku-logo">
+            <a href="https://www.roku.com/en-ca/"><img id="roku-logo" src="images/roku-logo.png"></a>
+            
+    </div>
 
 
+<router-view @authenticated="setAuthenticated" @autherror="popError"/>	
+
+<!-- Makes the transition fade -->
+<transition name="fade" mode="out-in">
+        <router-view id="move"></router-view>
+</transition>
 
     </main>
-
-
-    <script type="module" src="js/master.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <script>
+		$('.toast').toast();
+    </script>
+    
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
