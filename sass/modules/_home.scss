@@ -159,7 +159,20 @@
 
 #login-buttons
 {
-    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $main-font;
+}
+
+#login-buttons a
+{
+    background: #ffffff;
+    padding: 7px 50px 7px 50px;
+    border-radius: 10px;
+    border-color: $blue;
+    border-width: 2px;
+    border: 5px;
+    color: #000;
 }
 
 #roku-logo 

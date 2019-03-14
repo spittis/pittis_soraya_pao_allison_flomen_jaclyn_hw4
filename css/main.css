@@ -403,7 +403,19 @@ footer ul li {
   }
 
   #login-buttons {
-    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+  }
+
+  #login-buttons a {
+    background: #ffffff;
+    padding: 7px 50px 7px 50px;
+    border-radius: 10px;
+    border-color: #00EEFF;
+    border-width: 2px;
+    border: 5px;
+    color: #000;
   }
 
   #roku-logo {
