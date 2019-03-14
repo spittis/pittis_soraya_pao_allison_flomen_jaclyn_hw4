@@ -132,6 +132,363 @@
     height: auto;
     margin-top: 125px;
     border: none; } }
+@media only screen and (max-width: 479px) {
+  #login-mobile {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0px; }
+
+  #login-tablet {
+    display: none; }
+
+  #login-desktop {
+    display: none; }
+
+  #logo {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 30%;
+    padding-top: 20px; }
+
+  h2 {
+    font-family: "classybeautiful";
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    position: relative;
+    margin: 0; }
+
+  h3 {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px; }
+
+  p {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px; }
+
+  #signup {
+    display: none; }
+
+  #signup-mob {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto; }
+
+  input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=tel] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=date] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #D742D8;
+    color: #00EEFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #D742D8;
+    margin: 0 auto; }
+
+  label {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9em;
+    float: left;
+    clear: both;
+    padding-left: 10px;
+    margin-top: 10px; } }
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  #login-mobile {
+    display: none; }
+
+  #login-tablet {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0px; }
+
+  #login-desktop {
+    display: none; }
+
+  #logo {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 35%;
+    padding-top: 20px; }
+
+  h2 {
+    font-family: "classybeautiful";
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    position: relative;
+    margin: 0; }
+
+  h3 {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px; }
+
+  p {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px; }
+
+  #signup {
+    display: none; }
+
+  #signup-mob {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto; }
+
+  input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 15px; }
+
+  input[type=tel] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 15px; }
+
+  input[type=date] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 15px; }
+
+  input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 15px; }
+
+  input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #D742D8;
+    color: #00EEFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #D742D8;
+    margin: 0 auto; }
+
+  label {
+    display: none; } }
+@media only screen and (min-width: 1024px) {
+  #login-mobile {
+    display: none; }
+
+  #login-tablet {
+    display: none; }
+
+  #login-desktop {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    margin: 0;
+    padding: 0px; }
+
+  #logo {
+    width: 15%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 42%;
+    padding-top: 20px; }
+
+  h2 {
+    font-family: "classybeautiful";
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    position: relative;
+    margin: 0; }
+
+  h3 {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0; }
+
+  p {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px; }
+
+  #signup {
+    display: none; }
+
+  #signup-mob {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto; }
+
+  input[type=text] {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 2px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=tel] {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 2px;
+    border-color: #00EEFF; }
+
+  input[type=date] {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 2px;
+    border-color: #00EEFF; }
+
+  input[type=email] {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 2px;
+    border-color: #00EEFF; }
+
+  input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #D742D8;
+    color: #00EEFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #D742D8;
+    margin: 0 auto; }
+
+  label {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9em;
+    float: left;
+    clear: both;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-transform: uppercase; }
+
+  label {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9em;
+    float: left;
+    clear: both;
+    margin-left: 24%;
+    margin-top: 5px;
+    text-transform: uppercase; } }
 hide {
   display: none; }
 
