@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 479px) {
 #bkgrd-mobile
 {
@@ -28,16 +29,17 @@
     position: relative;
 }
 
-#login-buttons
+#loginButtons
 {
     text-align: center;
     text-transform: uppercase;
     font-family: $main-font;
     border-color: $blue;
     border: 5px;
+    margin-top: 30px;
 }
 
-#login-buttons a
+#loginButtons a
 {
     text-align: center;
     text-transform: uppercase;
@@ -49,19 +51,30 @@
     border-radius: 10px;
     border-color: $blue;
     border-width: 2px;
-    margin: 10px;
+    margin: 15px;
     color: #000;
 }
 
+#login
+{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
 
 #roku-logo 
 {
     margin: 0 auto;
     width: 70px;
     height: auto;
-    margin-top: 100px;
     border: none;
+    margin-top: 25px;
 }
+
+#sign-in
+{
+    margin-top: -30px;
+}
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
@@ -93,7 +106,7 @@
     margin-top: 30%;
 }
 
-#login-buttons
+#loginButtons
 {
     text-align: center;
     text-transform: uppercase;
@@ -101,7 +114,7 @@
     margin-top: 10%;
 }
 
-#login-buttons a
+#loginButtons a
 {
     text-align: center;
     text-transform: uppercase;
@@ -157,9 +170,30 @@
     margin-top: 10%;
 }
 
-#login-buttons
+#loginButtons
 {
-    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $main-font;
+    border-color: $blue;
+    border: 5px;
+    margin-top: 30px;
+}
+
+#loginButtons a
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $main-font;
+    background: #ffffff;
+    // width: 75px;
+    padding: 7px 40px 7px 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: $blue;
+    border-width: 2px;
+    margin: 15px;
+    color: #000;
 }
 
 #roku-logo 
@@ -167,7 +201,7 @@
     margin: 0 auto;
     width: 100px;
     height: auto;
-    margin-top: 125px;
+    margin-top: 50px;
     border: none;
 }
 }

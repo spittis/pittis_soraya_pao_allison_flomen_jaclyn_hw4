@@ -89,6 +89,19 @@ input[type=text]
     
 }
 
+input[type=password]
+{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: $blue;
+    margin: 0 auto;
+    // margin-left: 17%;
+    
+}
+
 input[type=tel]
 {
     padding: 10px;
@@ -251,6 +264,22 @@ input[type=text]
     
 }
 
+input[type=password]
+{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: $blue;
+    margin: 0 auto;
+    // margin-left: 17%;
+    margin-top: 10px;
+    padding-top: 15px;
+    
+}
+
+
 input[type=tel]
 {
     padding: 10px;
@@ -407,6 +436,19 @@ label
     }
     
     input[type=text]
+    {
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px;
+        width: 500px;
+        border-width: 2px;
+        border-color: $blue;
+        margin: 0 auto;
+        // margin-left: 17%;
+        
+    }
+
+    input[type=password]
     {
         padding: 15px;
         border-radius: 5px;

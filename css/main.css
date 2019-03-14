@@ -30,14 +30,15 @@
     margin-top: 20%;
     position: relative; }
 
-  #login-buttons {
+  #loginButtons {
     text-align: center;
     text-transform: uppercase;
     font-family: "Avenir Next", Helvetica, sans-serif;
     border-color: #00EEFF;
-    border: 5px; }
+    border: 5px;
+    margin-top: 30px; }
 
-  #login-buttons a {
+  #loginButtons a {
     text-align: center;
     text-transform: uppercase;
     font-family: "Avenir Next", Helvetica, sans-serif;
@@ -47,15 +48,22 @@
     border-radius: 10px;
     border-color: #00EEFF;
     border-width: 2px;
-    margin: 10px;
+    margin: 15px;
     color: #000; }
+
+  #login {
+    padding-bottom: 10px;
+    margin-bottom: 10px; }
 
   #roku-logo {
     margin: 0 auto;
     width: 70px;
     height: auto;
-    margin-top: 100px;
-    border: none; } }
+    border: none;
+    margin-top: 25px; }
+
+  #sign-in {
+    margin-top: -30px; } }
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
   #bkgrd-mobile {
     display: none; }
@@ -77,13 +85,13 @@
     margin-left: 10%;
     margin-top: 30%; }
 
-  #login-buttons {
+  #loginButtons {
     text-align: center;
     text-transform: uppercase;
     font-family: "Avenir Next", Helvetica, sans-serif;
     margin-top: 10%; }
 
-  #login-buttons a {
+  #loginButtons a {
     text-align: center;
     text-transform: uppercase;
     font-family: "Avenir Next", Helvetica, sans-serif;
@@ -123,14 +131,32 @@
     margin-left: 33%;
     margin-top: 10%; }
 
-  #login-buttons {
-    display: none; }
+  #loginButtons {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    border-color: #00EEFF;
+    border: 5px;
+    margin-top: 30px; }
+
+  #loginButtons a {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    background: #ffffff;
+    padding: 7px 40px 7px 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #00EEFF;
+    border-width: 2px;
+    margin: 15px;
+    color: #000; }
 
   #roku-logo {
     margin: 0 auto;
     width: 100px;
     height: auto;
-    margin-top: 125px;
+    margin-top: 50px;
     border: none; } }
 @media only screen and (max-width: 479px) {
   #login-mobile {
@@ -189,6 +215,15 @@
     margin: 0 auto; }
 
   input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=password] {
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
@@ -315,6 +350,17 @@
     margin-top: 10px;
     padding-top: 15px; }
 
+  input[type=password] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #00EEFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 15px; }
+
   input[type=tel] {
     padding: 10px;
     border-radius: 5px;
@@ -419,6 +465,15 @@
     margin: 0 auto; }
 
   input[type=text] {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    border-width: 2px;
+    border-color: #00EEFF;
+    margin: 0 auto; }
+
+  input[type=password] {
     padding: 15px;
     border-radius: 5px;
     margin: 10px;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>ROKU</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ genre }}</h1>
+        <!-- <img v-bind:src="image"> -->
+        <ul class="navigator">
+          <li @click="prevSlide" class="lightgrey"> &laquo; </li>
+          <li @click="changeSlide(1)" class="green">1</li>
+          <li @click="changeSlide(2)" class="blue">2</li>
+          <li @click="changeSlide(3)" class="grey">3</li>
+          <li @click="nextSlide" class="lightgrey"> &raquo; </li>
+        </ul>
+        <div class="slider-container">
+          <ul class="slider" :style="styleObject">
+            <li v-for="item in videodata"> <!-- fetches the database stuff -->
+            <!-- <button v-on:click="fetchSingle" :data-movie="video.id" class="more-details">More Details...</button> -->
+                <img class="moviethumb" :src="'./images/'  + item.movies_cover">
+            </li>
+            <li class="green slide"><img class="moviethumb" v-bind:src="image"></li>
+            <li class="blue slide"><img class="moviethumb" v-bind:src="image2"></li>
+            <li class="grey slide"><img class="moviethumb" v-bind:src="image3"></li>
+
+
+          </ul>
+        </div>
+      </div>
+</body>
+<script src="js/movies.js"></script>
+</html>
